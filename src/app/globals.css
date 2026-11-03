@@ -1,3 +1,20 @@
+@font-face {
+  font-family: A;
+  src: url("../assets/fonts/A.woff2");
+}
+@font-face {
+  font-family: A2;
+  src: url("../assets/fonts/A2.woff2");
+}
+@font-face {
+  font-family: A3;
+  src: url("../assets/fonts/AvenirNextRegular_6b6dbe3.woff2");
+}
+@font-face {
+  font-family: A4;
+  src: url("../assets/fonts/vivo-icons.DnEakZZq.woff2");
+}
+
 @import "tailwindcss";
 
 :root {
@@ -5,22 +22,117 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-A: A, sans-serif;
+  --font-A2: A2, sans-serif;
+  --font-A3: A3, sans-serif;
+  --font-A4: A4, sans-serif;
+
+  /*  */
+  --color-white: #ffffff;
+  --color-light-cool-gray: #f5f7fa;
+  --color-charcoal-gray: #45474d;
+  --color-dark-charcoal: #333333;
+  --color-cadet-grey: #c2c5cc;
+  --color-slate-gray: #575c66;
+  --color-dim-gray: #666666;
+  --color-charcoal-blue: #242933;
+  --color-bright-royal-blue: #415fff;
+  --color-crimson-red: #e40c1b;
+  --color-deep-teal: #11856e;
+  /*  */
+  --text-46r: 4.6rem /* 46px */;
+  --text-40r: 4rem /* 40px */;
+  --text-30r: 3rem /* 30px */;
+  --text-28r: 2.8rem /* 28px */;
+  --text-26r: 2.6rem /* 26px */;
+  --text-24r: 2.4rem /* 24px */;
+  --text-22r: 2.2rem /* 22px */;
+  --text-20r: 2rem /* 20px */;
+  --text-18r: 1.8rem /* 18px */;
+  --text-16r: 1.6rem /* 16px */;
+  --text-14r: 1.4rem /* 14px */;
+  --text-12r: 1.2rem /* 12px */;
+
+  /*  */
+
+  --spacing-1600r: 160rem; /* 1600px */
+  --spacing-1560r: 156rem; /* 1560px */
+  --spacing-1440r: 144rem; /* 1440px */
+  --spacing-1200r: 120rem; /* 1200px */
+  --spacing-745r: 74.5rem; /* 745px */
+  --spacing-640r: 64rem; /* 640px */
+  --spacing-460r: 46rem; /* 460px */
+  --spacing-455r: 45.5rem; /* 455px */
+  --spacing-340r: 34rem; /* 340px */
+  --spacing-320r: 32rem; /* 320px */
+  --spacing-285r: 28.5rem; /* 285px */
+  --spacing-210r: 21rem; /* 210px */
+  --spacing-165r: 16.5rem; /* 165px */
+  --spacing-160r: 16rem; /* 160px */
+  --spacing-155r: 15.5rem; /* 155px */
+  --spacing-150r: 15rem; /* 150px */
+  --spacing-140r: 14rem; /* 140px */
+  --spacing-130r: 13rem; /* 130px */
+  --spacing-120r: 12rem; /* 120px */
+  --spacing-100r: 10rem; /* 100px */
+  --spacing-90r: 9rem; /* 90px */
+  --spacing-80r: 8rem; /* 80px */
+  --spacing-75r: 7.5rem; /* 75px */
+  --spacing-70r: 7rem; /* 70px */
+  --spacing-64r: 6.4rem; /* 64px */
+  --spacing-60r: 6rem; /* 60px */
+  --spacing-50r: 5rem; /* 50px */
+  --spacing-45r: 4.5rem; /* 45px */
+  --spacing-40r: 4rem; /* 40px */
+  --spacing-37r: 3.7rem; /* 37px */
+  --spacing-35r: 3.5rem; /* 35px */
+  --spacing-34r: 3.4rem; /* 34px */
+  --spacing-32r: 3.2rem; /* 32px */
+  --spacing-30r: 3rem; /* 30px */
+  --spacing-28r: 2.8rem; /* 28px */
+  --spacing-24r: 2.4rem; /* 24px */
+  --spacing-22r: 2.2rem; /* 22px */
+  --spacing-20r: 2rem; /* 20px */
+  --spacing-18r: 1.8rem; /* 18px */
+  --spacing-16r: 1.6rem; /* 16px */
+  --spacing-14r: 1.4rem; /* 14px */
+  --spacing-12r: 1.2rem; /* 12px */
+  --spacing-10r: 1rem; /* 10px */
+  --spacing-8r: 0.8rem; /* 8px */
+  --spacing-6r: 0.6rem; /* 6px */
+  --spacing-5r: 0.5rem; /* 5px */
+  --spacing-4r: 0.4rem; /* 4px */
+  --spacing-3r: 0.3rem; /* 3px */
+
+  /*  */
+  --radius-25p: 2.5rem /* 25px */;
+  --radius-24p: 2.4rem /* 24px */;
+  --radius-20p: 2rem /* 20px */;
+  --radius-18p: 1.8rem /* 18px */;
+  --radius-15p: 1.5rem /* 15px */;
+  --radius-14p: 1.4rem /* 14px */;
+  --radius-12p: 1.2rem /* 12px */;
+  --radius-11p: 1.1rem /* 11px */;
+  --radius-10p: 1rem /* 10px */;
+  --radius-8p: 0.8rem /* 8px */;
+  --radius-6p: 0.6rem /* 6px */;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 10px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
