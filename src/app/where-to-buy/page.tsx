@@ -425,10 +425,6 @@ export default function page() {
     getState("Andhra Pradesh");
   }, []);
 
-  console.log(toggele);
-  console.log(selectedCitys);
-  console.log(selectedStated);
-  console.log(cityStoreLocations);
 
   return (
     <main className="relative ">

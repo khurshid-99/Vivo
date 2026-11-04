@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroller from "@/components/SmoothScroller";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Vivo",
@@ -13,9 +14,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`h-full antialiased`}>
       <body
         cz-shortcut-listen="true"
-        className="min-h-full flex flex-col bg-light-cool-gray "
+        className="relative flex flex-col bg-light-cool-gray "
       >
         <SmoothScroller>
+          <Navbar />
           {children}
           <Footer />
         </SmoothScroller>
