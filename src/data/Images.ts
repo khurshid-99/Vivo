@@ -28,7 +28,12 @@ import NoCostEMI from "../assets/EStore/NoCostEMI.webp";
 import ServiceSupport from "../assets/EStore/ServiceSupport.webp";
 import SecurePayments from "../assets/EStore/SecurePayments.webp";
 
+import VivoExclusiveStoreBanner from "../assets/vivoExclusiveStores/support-center-banner.jpg";
+import LocationIcon from "../assets/icons/location-icon.svg";
+
 export {
+  LocationIcon,
+  VivoExclusiveStoreBanner,
   PriceGuarantee,
   NoCostEMI,
   ServiceSupport,

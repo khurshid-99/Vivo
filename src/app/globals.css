@@ -38,6 +38,7 @@
   --color-slate-gray: #575c66;
   --color-dim-gray: #666666;
   --color-charcoal-blue: #242933;
+  --color-platinum-gray: #e8eaed;
   --color-bright-royal-blue: #415fff;
   --color-crimson-red: #e40c1b;
   --color-deep-teal: #11856e;
@@ -63,11 +64,13 @@
   --spacing-1200r: 120rem; /* 1200px */
   --spacing-745r: 74.5rem; /* 745px */
   --spacing-640r: 64rem; /* 640px */
+  --spacing-590r: 59rem; /* 590px */
   --spacing-460r: 46rem; /* 460px */
   --spacing-455r: 45.5rem; /* 455px */
   --spacing-340r: 34rem; /* 340px */
   --spacing-320r: 32rem; /* 320px */
   --spacing-285r: 28.5rem; /* 285px */
+  --spacing-264r: 26.4rem; /* 264px */
   --spacing-210r: 21rem; /* 210px */
   --spacing-165r: 16.5rem; /* 165px */
   --spacing-160r: 16rem; /* 160px */
@@ -91,13 +94,16 @@
   --spacing-34r: 3.4rem; /* 34px */
   --spacing-32r: 3.2rem; /* 32px */
   --spacing-30r: 3rem; /* 30px */
+  --spacing-29r: 2.9rem; /* 29px */
   --spacing-28r: 2.8rem; /* 28px */
   --spacing-24r: 2.4rem; /* 24px */
   --spacing-22r: 2.2rem; /* 22px */
   --spacing-20r: 2rem; /* 20px */
   --spacing-18r: 1.8rem; /* 18px */
   --spacing-16r: 1.6rem; /* 16px */
+  --spacing-15r: 1.5rem; /* 15px */
   --spacing-14r: 1.4rem; /* 14px */
+  --spacing-13r: 1.3rem; /* 13px */
   --spacing-12r: 1.2rem; /* 12px */
   --spacing-10r: 1rem; /* 10px */
   --spacing-8r: 0.8rem; /* 8px */
