@@ -7,12 +7,17 @@ import {
   Accessories3,
   EStoreBanner,
   JustLaunched,
+  NoCostEMI,
+  PriceGuarantee,
+  SecurePayments,
+  ServiceSupport,
   Smartphones,
   StudentProgram,
   VivoLive,
 } from "@/data/Images";
 import Image from "next/image";
 import EStoreLatestBannerCard from "@/components/EStoreLatestBannerCard";
+import Link from "next/link";
 
 export default function EStore() {
   return (
@@ -332,6 +337,75 @@ export default function EStore() {
             off={25}
           />
         </div>
+      </section>
+      {/*  */}
+      <section className="bg-white pt-64r pb-30r ">
+        <ul className="max-w-1200r mx-auto grid grid-cols-5 pb-20r border-b border-light-gray  ">
+          <li>
+            <Link href={""} className="flex flex-col items-center gap-10r ">
+              <Image
+                src={PriceGuarantee}
+                alt=""
+                className="w-60r aspect-square object-cover object-center "
+              />
+              <span className="text-16r text-dim-gray font-A2 text-center ">
+                {" "}
+                15 Days Price Guarantee
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={""} className="flex flex-col items-center gap-10r ">
+              <Image
+                src={NoCostEMI}
+                alt=""
+                className="w-60r aspect-square object-cover object-center "
+              />
+              <span className="text-16r text-dim-gray font-A2 text-center ">
+                {" "}
+                No Cost EMIe
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={""} className="flex flex-col items-center gap-10r ">
+              <Image
+                src={ServiceSupport}
+                alt=""
+                className="w-60r aspect-square object-cover object-center "
+              />
+              <span className="text-16r text-dim-gray font-A2 text-center ">
+                {" "}
+                Free Shipping on orders above Rs.500
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={""} className="flex flex-col items-center gap-10r ">
+              <Image
+                src={SecurePayments}
+                alt=""
+                className="w-60r aspect-square object-cover object-center "
+              />
+              <span className="text-16r text-dim-gray font-A2 text-center ">
+                {" "}
+                100% Secure Payments
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={""} className="flex flex-col items-center gap-10r ">
+              <Image
+                src={ServiceSupport}
+                alt=""
+                className="w-60r aspect-square object-cover object-center "
+              />
+              <span className="text-16r text-dim-gray font-A2 text-center ">
+                24*7 Service Support
+              </span>
+            </Link>
+          </li>
+        </ul>
       </section>
     </main>
   );

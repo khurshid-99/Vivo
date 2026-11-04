@@ -23,7 +23,16 @@ import Accessories5 from "../assets/EStore/Accessories5.webp";
 import Accessories6 from "../assets/EStore/Accessories6.webp";
 import Accessories7 from "../assets/EStore/Accessories7.webp";
 
+import PriceGuarantee from "../assets/EStore/PriceGuarantee.webp";
+import NoCostEMI from "../assets/EStore/NoCostEMI.webp";
+import ServiceSupport from "../assets/EStore/ServiceSupport.webp";
+import SecurePayments from "../assets/EStore/SecurePayments.webp";
+
 export {
+  PriceGuarantee,
+  NoCostEMI,
+  ServiceSupport,
+  SecurePayments,
   Accessories1,
   Accessories2,
   Accessories3,
