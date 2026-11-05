@@ -89,10 +89,10 @@ const Navbar = ({ style }: { style?: string }) => {
         {/*  */}
         <ul className="flex items-center gap-42r text-14r font-A2 ">
           <li className="py-34r hover:text-bright-royal-blue duration-300 ">
-            <Link href={""}>Home</Link>
+            <Link href={"/"}>Home</Link>
           </li>
           <li className="py-29r hover:text-bright-royal-blue duration-300 ">
-            <Link href={""}>Products</Link>
+            <Link href={"/products"}>Products</Link>
           </li>
           <li className="py-29r hover:text-bright-royal-blue duration-300  ">
             <Link href={"/e-store"}>E-Store</Link>
