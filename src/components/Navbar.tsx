@@ -179,8 +179,8 @@ const Navbar = ({ style }: { style?: string }) => {
                       id="矩形备份-6"
                       x="0"
                       y="0"
-                      width="28"
-                      height="28"
+                      width={28}
+                      height={28}
                     ></rect>
                     <g
                       id="编组-18"
