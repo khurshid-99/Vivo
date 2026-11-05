@@ -1,12 +1,8 @@
-.logo svg path {
-  fill: #ffffff;
-  transition: fill 0.3s ease;
+.logo svg {
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-.logo.logo_scroll svg path {
-  fill: #242933;
-}
-
-.logo:hover svg path {
-  fill: #415fff;
+.logo:hover svg {
+  color: #415fff;
 }

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Products() {
   return (
     <main className="bg-light-cool-gray ">
-      <Navbar />
+      <Navbar style="!text-charcoal-blue " fill="#242933" />
 
       <div className="max-w-1440r mx-auto text-center pt-140r pb-80r ">
         <h1 className="text-46r text-charcoal-blue font-A2 ">
