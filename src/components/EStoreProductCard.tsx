@@ -23,6 +23,7 @@ export default function EStoreProductCard({
       <Image
         src={img}
         alt=""
+        loading="eager"
         className="w-210r aspect-square object-center object-cover "
       />
       <div className="">

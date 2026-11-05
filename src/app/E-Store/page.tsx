@@ -26,7 +26,12 @@ export default function EStore() {
       <Navbar style="!relative !bg-white !text-charcoal-blue " />
 
       <header className="w-full aspect-1920/560">
-        <Image src={EStoreBanner} alt="" className="w-full h-full " />
+        <Image
+          src={EStoreBanner}
+          alt="E-Store Banner"
+          loading="eager"
+          className="w-full h-full "
+        />
       </header>
       <section className="max-w-1200r mx-auto flex items-center justify-between pt-50r">
         <EStoreCategoryCard title="Smartphones" img={Smartphones} />
@@ -43,6 +48,7 @@ export default function EStore() {
           <Image
             src={JustLaunched}
             alt=""
+            loading="eager"
             className="w-full h-full object-center object-cover rounded-18p "
           />
         </div>
@@ -58,6 +64,7 @@ export default function EStore() {
             <Image
               src={Accessories1}
               alt=""
+              loading="eager"
               className="w-full h-full object-cover object-center "
             />
           </div>
@@ -163,6 +170,7 @@ export default function EStore() {
           <Image
             src={JustLaunched}
             alt=""
+            loading="eager"
             className="w-full h-full object-center object-cover rounded-18p "
           />
         </div>
@@ -349,6 +357,7 @@ export default function EStore() {
               <Image
                 src={PriceGuarantee}
                 alt=""
+                loading="eager"
                 className="w-60r aspect-square object-cover object-center "
               />
               <span className="text-16r text-dim-gray font-A2 text-center ">
@@ -362,6 +371,7 @@ export default function EStore() {
               <Image
                 src={NoCostEMI}
                 alt=""
+                loading="eager"
                 className="w-60r aspect-square object-cover object-center "
               />
               <span className="text-16r text-dim-gray font-A2 text-center ">
@@ -375,6 +385,7 @@ export default function EStore() {
               <Image
                 src={ServiceSupport}
                 alt=""
+                loading="eager"
                 className="w-60r aspect-square object-cover object-center "
               />
               <span className="text-16r text-dim-gray font-A2 text-center ">
@@ -388,6 +399,7 @@ export default function EStore() {
               <Image
                 src={SecurePayments}
                 alt=""
+                loading="eager"
                 className="w-60r aspect-square object-cover object-center "
               />
               <span className="text-16r text-dim-gray font-A2 text-center ">
@@ -401,6 +413,7 @@ export default function EStore() {
               <Image
                 src={ServiceSupport}
                 alt=""
+                loading="eager"
                 className="w-60r aspect-square object-cover object-center "
               />
               <span className="text-16r text-dim-gray font-A2 text-center ">

@@ -13,6 +13,7 @@ export default function EStoreCategoryCard({ title, img }: ECardProps) {
         <Image
           src={img}
           alt=""
+          loading="eager"
           className="w-150r aspect-square object-center object-cover"
         />
       </div>

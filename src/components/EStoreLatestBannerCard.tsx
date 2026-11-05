@@ -15,6 +15,7 @@ export default function EStoreLatestBannerCard({ title }: EBannerCardProps) {
         <Image
           src={JustLaunched}
           alt=""
+          loading="eager"
           className="w-full h-full object-center object-cover rounded-18p "
         />
       </div>
