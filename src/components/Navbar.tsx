@@ -32,8 +32,8 @@ const Navbar = ({ style }: { style?: string }) => {
         <Link href={"/"} className={`logo ${onwheel ? "logo_scroll" : ""}`}>
           <svg
             aria-hidden="true"
-            width="104px"
-            height="28px"
+            width={104}
+            height={28}
             viewBox="0 0 103 28"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -121,8 +121,8 @@ const Navbar = ({ style }: { style?: string }) => {
             <svg
               aria-hidden="true"
               // tabIndex="-1"
-              width="28px"
-              height="28px"
+              width={28}
+              height={28}
               viewBox="0 0 28 28"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -151,8 +151,8 @@ const Navbar = ({ style }: { style?: string }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
-              width="28px"
-              height="28px"
+              width={28}
+              height={28}
               viewBox="0 0 28 28"
               version="1.1"
               // tabIndex="-1"
