@@ -428,7 +428,7 @@ export default function page() {
 
   return (
     <main className="relative ">
-      <Navbar style="text-charcoal-blue bg-[red] " />
+      <Navbar style="!text-charcoal-blue " />
 
       <header className="relative w-full aspect-1920/908 ">
         <Image

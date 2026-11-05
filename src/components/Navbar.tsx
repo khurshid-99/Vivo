@@ -4,7 +4,7 @@ import "./Nav.Style.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const Navbar = ({ style, fill }: { style?: string; fill?: string }) => {
+const Navbar = ({ style }: { style?: string }) => {
   const [onwheel, setOnwheel] = useState(false);
 
   useEffect(() => {

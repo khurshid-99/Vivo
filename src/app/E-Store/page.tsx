@@ -23,7 +23,7 @@ import Navbar from "@/components/Navbar";
 export default function EStore() {
   return (
     <main className="bg-light-cool-gray ">
-      <Navbar />
+      <Navbar style="!relative !bg-white !text-charcoal-blue " />
 
       <header className="w-full aspect-1920/560">
         <Image src={EStoreBanner} alt="" className="w-full h-full " />
