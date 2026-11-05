@@ -476,7 +476,7 @@ export default function page() {
             {/*  */}
             <div
               onWheel={(e) => e.stopPropagation()}
-              className="max-h-[300px] overflow-y-auto grid grid-cols-3 pt-13r pb-22r px-28r "
+              className="max-h-75 overflow-y-auto grid grid-cols-3 pt-13r pb-22r px-28r "
             >
               {toggele
                 ? statesData.map(({ id, name }) => (

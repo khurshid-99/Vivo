@@ -1,4 +1,3 @@
-import { Accessories2 } from "@/data/Images";
 import Image, { StaticImageData } from "next/image";
 
 interface EAccessorieProps {
