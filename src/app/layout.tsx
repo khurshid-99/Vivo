@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroller from "@/components/SmoothScroller";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Vivo",
@@ -17,7 +16,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className="relative flex flex-col bg-light-cool-gray "
       >
         <SmoothScroller>
-          <Navbar />
           {children}
           <Footer />
         </SmoothScroller>

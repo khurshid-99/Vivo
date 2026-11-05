@@ -1,12 +1,12 @@
 "use client";
 
+import Navbar from "@/components/Navbar";
 import {
   Buds,
-  HomeBanner,
+  HeaderBanner2,
   S2,
   S2FE,
   T5,
-  Twitter,
   Vision,
   X300,
   XFold6,
@@ -16,10 +16,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full bg-light-cool-gray ">
+      <Navbar />
+
       {/*  */}
-      <header className="w-full aspect-1920/920 ">
+      <header className="w-full aspect-1920/925 ">
         <Image
-          src={HomeBanner}
+          src={HeaderBanner2}
           alt="Banner"
           priority
           loading="eager"
@@ -96,7 +98,6 @@ export default function Home() {
         </div>
       </section>
       {/*  */}
-      
     </main>
   );
 }

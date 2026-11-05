@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { ProductCard } from "@/components/ProductCard";
 import { X300 } from "@/data/Images";
 import Image from "next/image";
@@ -5,6 +6,8 @@ import Image from "next/image";
 export default function Products() {
   return (
     <main className="bg-light-cool-gray ">
+      <Navbar />
+
       <div className="max-w-1440r mx-auto text-center pt-140r pb-80r ">
         <h1 className="text-46r text-charcoal-blue font-A2 ">
           Find the phone that's right for you

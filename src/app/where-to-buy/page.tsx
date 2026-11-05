@@ -1,5 +1,6 @@
 "use client";
 
+import Navbar from "@/components/Navbar";
 import { LocationIcon, VivoExclusiveStoreBanner } from "@/data/Images";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -425,9 +426,10 @@ export default function page() {
     getState("Andhra Pradesh");
   }, []);
 
-
   return (
     <main className="relative ">
+      <Navbar style="text-charcoal-blue bg-[red] " />
+
       <header className="relative w-full aspect-1920/908 ">
         <Image
           src={VivoExclusiveStoreBanner}

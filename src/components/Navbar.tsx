@@ -1,11 +1,35 @@
-import Link from "next/link";
-import React from "react";
+"use client";
+import "./Nav.Style.css";
 
-const Navbar = () => {
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const Navbar = ({ style }: { style?: string }) => {
+  const [onwheel, setOnwheel] = useState(false);
+
+  useEffect(() => {
+    const HandleScroll = () => {
+      setOnwheel(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", HandleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", HandleScroll);
+    };
+  }, []);
+
+  // console.log(style);
+
   return (
-    <nav className="w-full fixed top-0 left-0 bg-[red] ">
+    <nav
+      className={` 
+        ${
+          onwheel ? "bg-white text-charcoal-blue" : "bg-transparent text-white"
+        } w-full fixed top-0 left-0 z-999 duration-500 ${style} `}
+    >
       <div className="max-w-1440r mx-auto flex items-center justify-between ">
-        <Link href={""}>
+        <Link href={"/"} className={`logo ${onwheel ? "logo_scroll" : ""}`}>
           <svg
             aria-hidden="true"
             width="104px"
@@ -19,7 +43,7 @@ const Navbar = () => {
               id="海外一期"
               stroke="none"
               strokeWidth="1"
-              fill="none"
+              fill=""
               fillRule="evenodd"
             >
               <g
@@ -28,11 +52,7 @@ const Navbar = () => {
               >
                 <g id="编组-6">
                   <g id="vivo" transform="translate(240.000000, 29.000000)">
-                    <g
-                      id="vivo-LOGO"
-                      transform="translate(1.000000, 0.000000)"
-                      fill="#ffffff"
-                    >
+                    <g id="vivo-LOGO" transform="translate(1.000000, 0.000000)">
                       <path
                         className="vep-pc-logo-path"
                         d="M92.1201187,22.7773568 L83.3531521,22.7773568 C78.4247857,22.7773568 77.9864276,18.7356293 77.9864276,17.5007165 C77.9864276,16.2658037 78.4247857,12.2240763 83.3531521,12.2240763 L92.1201187,12.2240763 C97.0484851,12.2240763 97.4868432,16.2658037 97.4868432,17.5007165 C97.4868432,18.7356293 97.0484851,22.7773568 92.1201187,22.7773568 M92.1201187,7.77940186 L83.3531521,7.77940186 C74.2419976,7.77940186 73.4316287,15.2256518 73.4316287,17.5007165 C73.4316287,19.7759758 74.2419976,27.2222258 83.3531521,27.2222258 L92.1201187,27.2222258 C101.231468,27.2222258 102.041837,19.7759758 102.041837,17.5007165 C102.041837,15.2256518 101.231468,7.77940186 92.1201187,7.77940186"
@@ -65,67 +85,69 @@ const Navbar = () => {
             </g>
           </svg>
         </Link>
+
         {/*  */}
-        <ul className="flex items-center gap-40r text-14r text-white font-A2 ">
-          <li className="py-29r ">
+        <ul className="flex items-center gap-42r text-14r font-A2 ">
+          <li className="py-34r hover:text-bright-royal-blue duration-300 ">
             <Link href={""}>Home</Link>
           </li>
-          <li className="py-29r ">
+          <li className="py-29r hover:text-bright-royal-blue duration-300 ">
             <Link href={""}>Products</Link>
           </li>
-          <li className="py-29r ">
-            <Link href={""}>E-Store</Link>
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
+            <Link href={"/e-store"}>E-Store</Link>
           </li>
-          <li className="py-29r ">
-            <Link href={""}>vivo Exclusive store</Link>
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
+            <Link href={"/where-to-buy"}>vivo Exclusive store</Link>
           </li>
-          <li className="py-29r ">
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
             <Link href={""}>Community</Link>
           </li>
-          <li className="py-29r ">
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
             <Link href={""}>OriginOS</Link>
           </li>
-          <li className="py-29r ">
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
             <Link href={""}>Support</Link>
           </li>
-          <li className="py-29r ">
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
             <Link href={""}>vivo Newsroom</Link>
           </li>
-          <li className="py-29r ">
+          <li className="py-29r hover:text-bright-royal-blue duration-300  ">
             <Link href={""}>iQOO</Link>
           </li>
         </ul>
         <div className="flex items-center gap-40r ">
-          <Link href={""}>
+          <Link href={""} className={`logo ${onwheel ? "logo_scroll" : ""}`}>
             <svg
               aria-hidden="true"
-              tabIndex="-1"
+              // tabIndex="-1"
               width="28px"
               height="28px"
               viewBox="0 0 28 28"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
+              fill=""
             >
               <g
                 id="搜索"
                 stroke="none"
                 strokeWidth="1"
-                fill="none"
+                fill="true"
                 fillRule="evenodd"
               >
                 <g id="编组-17">
                   <path
                     d="M16,5 C20.418278,5 24,8.581722 24,13 C24,16.0803917 22.2590043,18.7541521 19.7073223,20.0909719 L23.0905984,23.3102362 C23.2506305,23.4625276 23.2569056,23.7157158 23.1046142,23.875748 C23.0291106,23.9550893 22.9243759,24 22.8148504,24 L20.6539141,24 C20.3972737,24 20.150457,23.9013297 19.9645442,23.7244095 L17.0320536,20.9340435 C16.6941842,20.9775607 16.3497126,21 16,21 L12,21 C7.581722,21 4,17.418278 4,13 C4,8.581722 7.581722,5 12,5 L16,5 Z M16,7 L12,7 C8.6862915,7 6,9.6862915 6,13 C6,16.3137085 8.6862915,19 12,19 L16,19 C19.3137085,19 22,16.3137085 22,13 C22,9.6862915 19.3137085,7 16,7 Z"
                     id="形状结合"
-                    fill="#242933"
+                    fill={``}
                     fillRule="nonzero"
                   ></path>
                 </g>
               </g>
             </svg>
           </Link>
-          <Link href={""}>
+          <Link href={""} className={`logo ${onwheel ? "logo_scroll" : ""}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -133,7 +155,7 @@ const Navbar = () => {
               height="28px"
               viewBox="0 0 28 28"
               version="1.1"
-              tabIndex="-1"
+              // tabIndex="-1"
               aria-hidden="true"
             >
               <title>个人中心_导航</title>
@@ -163,7 +185,7 @@ const Navbar = () => {
                     <g
                       id="编组-18"
                       transform="translate(3.000000, 5.000000)"
-                      fill="#242933"
+                      fill={""}
                       fillRule="nonzero"
                     >
                       <g id="编组-2" transform="translate(0.000000, 12.000000)">

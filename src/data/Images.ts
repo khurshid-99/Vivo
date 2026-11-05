@@ -1,4 +1,6 @@
 import HomeBanner from "../assets/home/home_header_img.jpg";
+import HeaderBanner2 from '../assets/home/header_banner2.jpg'
+
 import XFold6 from "../assets/home/vivo_x_fold_6.jpg";
 import Vision from "../assets/home/vision.jpg";
 import T5 from "../assets/home/T5.jpg";
@@ -51,6 +53,7 @@ export {
   Accessories,
   VivoLive,
   EStoreBanner,
+  HeaderBanner2,
   HomeBanner,
   XFold6,
   Vision,

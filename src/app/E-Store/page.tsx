@@ -18,10 +18,13 @@ import {
 import Image from "next/image";
 import EStoreLatestBannerCard from "@/components/EStoreLatestBannerCard";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 
 export default function EStore() {
   return (
     <main className="bg-light-cool-gray ">
+      <Navbar />
+
       <header className="w-full aspect-1920/560">
         <Image src={EStoreBanner} alt="" className="w-full h-full " />
       </header>
